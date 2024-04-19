@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin's Aquarium</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <main id="container">
+        <div class="title"><strong>Martin's Aquarium</strong></div>
+        <h1>Fish List</h1>
+        <label for="fishFilter">Filter by:</label>
+        <select name="fishFilter" id="fishFilter">
+            <option value="All">All</option>
+            <option value="Holy">Holy</option>
+            <option value="Soldier">Soldier</option>
+            <option value="NonHoly">Non Holy</option>
+        </select>
+        <article class="containerItem" id="fishContainer">
+            <aside id="aside"></aside>
+            <div  id="insertFishList"></div>
+        </article>
+        <article class="containerItem">
+            <section>
+                <h1>Harvesting locations</h1>
+                <div id="locations"></div>
+            </section>
+        </article>
+    </main>
+
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
